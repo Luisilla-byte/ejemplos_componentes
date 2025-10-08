@@ -1,0 +1,93 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ejemplo de Componentes ion-button e ion-card
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ">
+ <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  <ion-card
+    style="max-width: 400px; text-align: inherit; margin: 20px auto; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"
+  >
+    <iframe
+      width="100%"
+      height="215"
+      src="https://www.youtube.com/embed/KSkFFe_-xLc"
+      frameborder="0"
+      allowfullscreen
+      style="border-radius: 10px;"
+    ></iframe>
+
+    <div class="contenido">
+      <ion-card-title>¿QUÉ tanto es CIERTO en esta HISTORIA? | Fórmula 1 | Relato y Reflexiones</ion-card-title>
+      <ion-card-subtitle>Canal: Farid Dieck</ion-card-subtitle>
+      <p>Likes: {{ videos[0].likes }}</p>
+
+      <ion-button
+        expand="round"
+        [color]="videos[0].color"
+        (click)="darLike(videos[0])"
+      >{{ videos[0].Texto }}
+        
+      </ion-button>
+    </div>
+  </ion-card>
+
+  <ion-card
+    style="max-width: 400px; text-align: inherit; margin: 20px auto; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"
+  >
+    <iframe
+      width="100%"
+      height="215"
+      src="https://www.youtube.com/embed/fDMLb-owurE"
+      frameborder="0"
+      allowfullscreen
+      style="border-radius: 10px;"
+    ></iframe>
+
+    <div class="contenido">
+      <ion-card-title>EL JEFE FINAL !! - Five Nights at Freddys 4 | Fernanfloo</ion-card-title>
+      <ion-card-subtitle>Canal: Fernanfloo</ion-card-subtitle>
+      <p>Likes: {{ videos[1].likes }}</p>
+
+      <ion-button
+        expand="round"
+        [color]="videos[1].color"
+        (click)="darLike(videos[1])"
+      >{{ videos[1].Texto }}
+        
+      </ion-button>
+    </div>
+  </ion-card>
+
+  <ion-card
+    style="max-width: 400px; text-align: inherit; margin: 20px auto; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"
+  >
+    <iframe
+      width="100%"
+      height="215"
+      src="https://www.youtube.com/embed/Ipxk9TXKE1E"
+      frameborder="0"
+      allowfullscreen
+      style="border-radius: 10px;"
+    ></iframe>
+
+    <div class="contenido">
+      <ion-card-title>El mayor misterio de Internet</ion-card-title>
+      <ion-card-subtitle>Canal: Eze Martinez</ion-card-subtitle>
+      <p>Likes: {{ videos[2].likes }}</p>
+
+      <ion-button
+        expand="round"
+        [color]="videos[2].color"
+        (click)="darLike(videos[2])"
+      >{{ videos[2].Texto }}
+        
+      </ion-button>
+    </div>
+  </ion-card>
+</div>
+</ion-content>
+
